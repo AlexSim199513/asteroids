@@ -1,6 +1,8 @@
 import pygame
 from constants import *
 
+print("Available constants:", dir())  # Add this line temporarily
+
 def main():
     pygame.init()
     print("Starting asteroids!")
