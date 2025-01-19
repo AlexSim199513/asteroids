@@ -1,8 +1,6 @@
 import pygame
 from constants import SCREEN_WIDTH, SCREEN_HEIGHT
 
-print("Available constants:", dir())  # Add this line temporarily
-
 def main():
     pygame.init()
     print("Starting asteroids!")
