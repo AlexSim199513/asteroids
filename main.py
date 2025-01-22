@@ -40,8 +40,9 @@ def main():
             if sprite.collision(player):
                 print("Game over!")
                 exit()
-            if sprite.collision(shots):
-                sprite.kill()
+            for shot in shots:
+                if sprite.collision(shot):
+                    sprite.kill()
         for sprite in drawable:
             sprite.draw(screen)
         pygame.display.flip()
