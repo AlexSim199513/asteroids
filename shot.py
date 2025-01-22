@@ -3,9 +3,9 @@ import pygame
 from constants import SHOT_RADIUS, PLAYER_SHOOT_SPEED
 
 class Shot(CircleShape):
-    def __init__(self, x, y):
+    def __init__(self, x, y, radius):
         super().__init__(x, y)
-        self.radius = SHOT_RADIUS
+        self.radius = radius
         self.velocity = pygame.Vector2(0,0)
         self.add(self.containers)
 
